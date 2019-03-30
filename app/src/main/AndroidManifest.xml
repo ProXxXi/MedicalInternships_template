@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.production.ksm.medicalinternships" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/title_activity_splash_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ChooseCountry"
+            android:label="@string/title_activity_choose_country" >
+        </activity>
+        <activity
+            android:name=".Austria"
+            android:label="@string/title_activity_austria" >
+        </activity>
+        <activity
+            android:name=".Germany"
+            android:label="@string/title_activity_germany" >
+        </activity>
+        <activity
+            android:name=".Australia"
+            android:label="@string/title_activity_australia" >
+        </activity>
+        <activity
+            android:name=".Usa"
+            android:label="@string/title_activity_usa" >
+        </activity>
+        <activity
+            android:name=".Czech"
+            android:label="@string/title_activity_czech" >
+        </activity>
+        <activity
+            android:name=".SouthKorea"
+            android:label="@string/title_activity_south_korea" >
+        </activity>
+        <activity
+            android:name=".GeneralEng"
+            android:label="@string/title_activity_general_eng" >
+        </activity>
+        <activity
+            android:name=".IeltsToefl"
+            android:label="@string/title_activity_ielts_toefl" >
+        </activity>
+        <activity
+            android:name=".SelectLanguageCourses"
+            android:label="@string/title_activity_select_language_courses" >
+        </activity>
+        <activity
+            android:name=".Israel"
+            android:label="@string/title_activity_israel" >
+        </activity>
+        <activity
+            android:name=".MedEng"
+            android:label="@string/title_activity_med_eng" >
+        </activity>
+        <activity
+            android:name=".usa.About_us"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+    </application>
+
+</manifest>

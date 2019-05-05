@@ -26,52 +26,8 @@
             android:label="@string/title_activity_choose_country" >
         </activity>
         <activity
-            android:name=".Austria"
-            android:label="@string/title_activity_austria" >
-        </activity>
-        <activity
-            android:name=".Germany"
-            android:label="@string/title_activity_germany" >
-        </activity>
-        <activity
             android:name=".Australia"
             android:label="@string/title_activity_australia" >
-        </activity>
-        <activity
-            android:name=".Usa"
-            android:label="@string/title_activity_usa" >
-        </activity>
-        <activity
-            android:name=".Czech"
-            android:label="@string/title_activity_czech" >
-        </activity>
-        <activity
-            android:name=".SouthKorea"
-            android:label="@string/title_activity_south_korea" >
-        </activity>
-        <activity
-            android:name=".GeneralEng"
-            android:label="@string/title_activity_general_eng" >
-        </activity>
-        <activity
-            android:name=".IeltsToefl"
-            android:label="@string/title_activity_ielts_toefl" >
-        </activity>
-        <activity
-            android:name=".SelectLanguageCourses"
-            android:label="@string/title_activity_select_language_courses" >
-        </activity>
-        <activity
-            android:name=".Israel"
-            android:label="@string/title_activity_israel" >
-        </activity>
-        <activity
-            android:name=".MedEng"
-            android:label="@string/title_activity_med_eng" >
-        </activity>
-        <activity
-            android:name=".usa.About_us"
-            android:label="@string/title_activity_about_us" >
         </activity>
     </application>
 

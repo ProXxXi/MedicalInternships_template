@@ -1,6 +1,8 @@
 package com.production.ksm.medicalinternships;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -26,16 +28,16 @@ public class ChooseCountry extends AppCompatActivity {
         setSupportActionBar(topToolBar);
         topToolBar.setTitleTextColor(getResources().getColor(R.color.text_white));
         if (getSupportActionBar() != null){
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
-        topToolBar.setNavigationIcon(R.drawable.ic_arrow_back_white); // your drawable
+        /*topToolBar.setNavigationIcon(R.drawable.ic_arrow_back_white); // your drawable
         topToolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed(); // Implemented by activity
             }
-        });
+        });*/
 
 
         List<ItemObject> rowListItem = getAllItemList();
@@ -61,4 +63,20 @@ public class ChooseCountry extends AppCompatActivity {
 
         return allItems;
     }
+    @Override
+    public void onBackPressed() {
+        //displayInterstitial();
+        new AlertDialog.Builder(this)
+                .setTitle("Закрыть приложение")
+                .setMessage("Вы точно хотите выйти из приложения?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+
+                        ChooseCountry.super.onBackPressed();
+
+                    }
+                }).create().show();
+    }
+
 }

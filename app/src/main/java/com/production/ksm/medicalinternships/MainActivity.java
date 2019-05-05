@@ -11,8 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.production.ksm.medicalinternships.usa.About_us;
-
+//THIS ACTIVITY IS NOT ACTIVATED NOW!!!
 
 public class MainActivity extends Activity {
 
@@ -38,28 +37,6 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, ChooseCountry.class);
-                startActivity(intent);
-
-            }
-        });
-
-        Button btn2 = (Button) findViewById(R.id.button2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, SelectLanguageCourses.class);
-                startActivity(intent);
-
-            }
-        });
-
-        Button btn3 = (Button) findViewById(R.id.button3);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, About_us.class);
                 startActivity(intent);
 
             }

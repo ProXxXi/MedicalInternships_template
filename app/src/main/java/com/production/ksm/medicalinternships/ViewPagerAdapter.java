@@ -4,7 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.production.ksm.medicalinternships.australia.*;
+import com.production.ksm.medicalinternships.australia.FragmentAdelaide;
+import com.production.ksm.medicalinternships.australia.FragmentMelbourn1;
+import com.production.ksm.medicalinternships.australia.FragmentMelbourne2;
+import com.production.ksm.medicalinternships.australia.FragmentSydney;
 
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
@@ -28,12 +31,12 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
         if(position == 0) // if the position is 0 we are returning the First tab
         {
-            Fragment1 tab1 = new Fragment1();
+            FragmentSydney tab1 = new FragmentSydney();
             return tab1;
         }
         else if(position == 1)             // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
         {
-            Fragment2 tab2 = new Fragment2();
+            FragmentMelbourn1 tab2 = new FragmentMelbourn1();
             return tab2;
         }
         else if(position == 2)            // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
